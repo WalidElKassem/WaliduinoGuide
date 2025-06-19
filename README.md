@@ -184,7 +184,7 @@ Each connector is clearly labeled, making it easy to know which pin you are usin
 
 With these external ports, the Waliduino grows with your imagination. Start simple, then explore more as you learn\!
 
-👉 [Get Started Guide](./000_Get_Started/Get_Started.md)
+👉 [Get Started Guide](./000_Get_Started/README.md)
 
 
 

@@ -33,7 +33,7 @@ Choose your suitable package for your operating system. Below is an example for 
  You will see a button like this:  
  📥 **“Windows Win 10 and newer, 64bits”**
 
-**![][image1.png]**
+**![Downlod Arduino][image1.png]**
 
 ---
 

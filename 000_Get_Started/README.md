@@ -151,11 +151,11 @@ Go to **Tools \> Board** and select **Arduino Nano**.
 
 Then go to **Tools \> Port** and choose the port where your Waliduino is connected (usually something like **COM3**, **COM4**, etc.).
 
-[image1]:<image1.png>
-[image2]:<image2.png>
-[image3]:<image3.png>
-[image4]:<image4.png>
-[image5]:<image5.png>
-[image6]:<image6.png>
-[image7]:<image7.png>
-[image8]:<image8.png>
+[image1]:<assets/image1.png>
+[image2]:<assets/image2.png>
+[image3]:<assets/image3.png>
+[image4]:<assets/image4.png>
+[image5]:<assets/image5.png>
+[image6]:<assets/image6.png>
+[image7]:<assets/image7.png>
+[image8]:<assets/image8.png>

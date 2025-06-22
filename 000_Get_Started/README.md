@@ -33,7 +33,7 @@ Choose your suitable package for your operating system. Below is an example for 
  You will see a button like this:  
  📥 **“Windows Win 10 and newer, 64bits”**
 
-**![][image1]**
+**![][ArduinoDownload]**
 
 ---
 
@@ -49,7 +49,7 @@ When your browser asks if you want to keep the file, click **“Yes”** or **�
 
 Both options will start the download of the installer.
 
-![][image2]
+![][ArduinoAllowDownload]
 
 After you click **“Just Download”**, you may see a pop-up asking if you want to **join the Arduino newsletter** by entering your email.
 
@@ -61,7 +61,7 @@ After you click **“Just Download”**, you may see a pop-up asking if you want
 
 Your download will then begin automatically. If your browser asks for permission, click **“Keep”** or **“Yes”** to allow the download.
 
-![][image3]
+![][ArduinoNewsLetter]
 
 ---
 
@@ -69,18 +69,18 @@ Your download will then begin automatically. If your browser asks for permission
 
 Double-click the downloaded file (something like `arduino-1.x.x-windows.exe`) to begin installation.
 
-![][image4]
+![][StartTheInstaller]
 
 ---
 
 #### **✅ Step 5: Agree and Install**
 
 1. Click **“I Agree”** to accept the license.  
-   ![][image5]  
+   ![][LicenseAgreement]  
 2. Keep all default options selected.
 
 3. Click **“Next”**, then **“Install”**.  
-   ![][image6]
+   ![][ArduinoSetup]
 
 ---
 
@@ -100,7 +100,6 @@ After the setup is complete, you’ll see the **“Completing Arduino IDE Setup�
 
 🎉 You’re now ready to start your first project with **Waliduino**\!
 
-![][image7]
 
 # 🖊️ Exploring the Arduino IDE Editor
 
@@ -114,7 +113,7 @@ Let’s look at the most important parts:
 
 In the middle, you see two basic functions:
 
-![][image8]
+![][CompleteSetup]
 
 * **`setup()`** runs once when the board is powered on or reset.
 
@@ -138,6 +137,13 @@ To install:
 
 2. Click **Install** (you’ll see “Installed” once it’s done)
 
+### **Select Board and Port**
+Make sure to select the “Arduino nano” as Board and to select the correct COM Port where the Arduino nano board is attached via USB to your PC.
+
+![][SelectBoardAndPort]
+![][SelectBoardAndPortDialog]
+
+
 Once this is set up, you’re ready to choose the board and port, write your first sketch, and upload it to the Waliduino\!
 
 # 🔌 Installing the USB Driver for Waliduino
@@ -153,11 +159,13 @@ Then go to **Tools \> Port** and choose the port where your Waliduino is connect
 
 👉 [Good to know](../000_Good_To_Know/README.md)
 
-[image1]:<assets/image1.png>
-[image2]:<assets/image2.png>
-[image3]:<assets/image3.png>
-[image4]:<assets/image4.png>
-[image5]:<assets/image5.png>
-[image6]:<assets/image6.png>
-[image7]:<assets/image7.png>
-[image8]:<assets/image8.png>
+[ArduinoDownload]:<assets/ArduinoDownload.png>
+[ArduinoAllowDownload]:<assets/ArduinoAllowDownload.png>
+[ArduinoNewsLetter]:<assets/ArduinoNewsLetter.png>
+[StartTheInstaller]:<assets/StartTheInstaller.png>
+[LicenseAgreement]:<assets/LicenseAgreement.png>
+[ArduinoSetup]:<assets/ArduinoSetup.png>
+[SelectBoardAndPort]:<assets/SelectBoardAndPort.png>
+[SelectBoardAndPortDialog]:<assets/SelectBoardAndPortDialog.png>
+[CompleteSetup]:<assets/CompleteSetup.png>
+

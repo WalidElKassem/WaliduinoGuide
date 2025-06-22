@@ -166,6 +166,8 @@ If some of the components or terms in this guide sound unfamiliar—**don’t wo
 
 **👉 *Use it for:* creating color-coded signals, visual feedback in projects, or colorful light effects in advertising displays and interactive screens.**
 
+---
+
 ### **🔌 External Connectors – Expand Your Projects\!**
 
 The **Waliduino** board comes with a set of **external connectors** that give you even more flexibility. These connectors provide access to some of the **digital and analog pins** of the Arduino Nano, so you can attach your own **sensors**, **LEDs**, **motors**, or other components.

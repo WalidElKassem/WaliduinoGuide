@@ -34,3 +34,40 @@ a:hover {
     width: 80%;
   }
 }
+
+/* Navigation */
+.site-nav {
+  background: #fff;
+  margin-bottom: 1rem;
+}
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-menu li {
+  margin-right: 1rem;
+}
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+  .nav-menu li {
+    margin: 0.5rem 0;
+  }
+}

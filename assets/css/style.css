@@ -46,6 +46,7 @@ a:hover {
   color: #fff;
   padding-top: 2rem;
   box-sizing: border-box;
+  z-index: 999;
 }
 .nav-rail a {
   color: #fff;

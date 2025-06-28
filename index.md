@@ -1,3 +1,7 @@
+---
+title: Waliduino Guide
+---
+
 # Welcome to Waliduino\!
 
 The **Waliduino** is a fun and easy-to-use electronic board made for learning. It’s based on the popular **Arduino**, but specially designed for beginners who want to explore the world of **electronics** and **programming**.
@@ -186,7 +190,7 @@ Each connector is clearly labeled, making it easy to know which pin you are usin
 
 With these external ports, the Waliduino grows with your imagination. Start simple, then explore more as you learn\!
 
-👉 [Get Started Guide](./000_Get_Started/README.md)
+👉 [Get Started Guide](./000_Get_Started/index.md)
 
 
 

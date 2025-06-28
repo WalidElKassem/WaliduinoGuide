@@ -157,7 +157,7 @@ Go to **Tools \> Board** and select **Arduino Nano**.
 
 Then go to **Tools \> Port** and choose the port where your Waliduino is connected (usually something like **COM3**, **COM4**, etc.).
 
-👉 [Good to know](../000_Good_To_Know/README.md)
+👉 [Good to know](../000_Good_To_Know/index.md)
 
 [ArduinoDownload]:<assets/ArduinoDownload.png>
 [ArduinoAllowDownload]:<assets/ArduinoAllowDownload.png>

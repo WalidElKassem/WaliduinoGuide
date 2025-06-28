@@ -1,0 +1,11 @@
+# Jekyll build directory
+_site/
+
+# Bundler artifacts
+.bundle/
+vendor/bundle/
+Gemfile.lock
+
+# Temporary and other files
+.DS_Store
+

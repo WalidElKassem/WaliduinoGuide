@@ -1,7 +1,7 @@
 ---
+layout: default
 ---
 
-[Home](../index.md) | [Get Started](../000_Get_Started/index.md) | [Good to Know](./index.md) | [Unit 1](../001_Unit1_Turn_On_Red_Led/index.md)
 
 ### 📘 Good to know before starting
 

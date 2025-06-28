@@ -74,6 +74,9 @@ a:hover {
   z-index: 1000;
   display: none;
 }
+.page-header {
+  margin-left: 220px;
+}
 .content {
   margin-left: 220px;
   padding: 1rem;
@@ -89,8 +92,11 @@ a:hover {
   #nav-toggle {
     display: block;
   }
+  .page-header,
   .content {
     margin-left: 0;
+  }
+  .content {
     padding-top: 3rem;
   }
 }

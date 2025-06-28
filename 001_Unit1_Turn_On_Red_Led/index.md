@@ -1,7 +1,7 @@
 ---
+layout: default
 ---
 
-[Home](../index.md) | [Get Started](../000_Get_Started/index.md) | [Good to Know](../000_Good_To_Know/index.md) | [Unit 1](./index.md)
 
 # 🔴 Unit 1: Turn On the Red LED
 

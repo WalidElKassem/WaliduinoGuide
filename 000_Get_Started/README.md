@@ -127,7 +127,7 @@ This is the place where you’ll write your own code for sensors, LEDs, motors, 
 
 On the left side, there is a section called **Boards Manager**. This is where you install the right **board package** so the Arduino IDE knows how to talk to your Waliduino.
 
-![][image9]
+![][ArduinoBoardManager]
 
 👉 **Important:** Before you upload code, make sure you install the **Arduino AVR Boards** package. This supports the **Arduino Nano**, which is the brain of the Waliduino.
 
@@ -164,6 +164,7 @@ Then go to **Tools \> Port** and choose the port where your Waliduino is connect
 [ArduinoNewsLetter]:<assets/ArduinoNewsLetter.png>
 [StartTheInstaller]:<assets/StartTheInstaller.png>
 [LicenseAgreement]:<assets/LicenseAgreement.png>
+[ArduinoBoardManager]:<assets/ArduinoBoardManager.png>
 [ArduinoSetup]:<assets/ArduinoSetup.png>
 [SelectBoardAndPort]:<assets/SelectBoardAndPort.png>
 [SelectBoardAndPortDialog]:<assets/SelectBoardAndPortDialog.png>

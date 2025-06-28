@@ -2,6 +2,8 @@
 title: Waliduino Guide
 ---
 
+[Home](./index.md) | [Get Started](./000_Get_Started/index.md) | [Good to Know](./000_Good_To_Know/index.md) | [Unit 1](./001_Unit1_Turn_On_Red_Led/index.md)
+
 # Welcome to Waliduino\!
 
 The **Waliduino** is a fun and easy-to-use electronic board made for learning. It’s based on the popular **Arduino**, but specially designed for beginners who want to explore the world of **electronics** and **programming**.

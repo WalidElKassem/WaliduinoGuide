@@ -1,6 +1,7 @@
 ---
 title: Waliduino Guide
 layout: default
+description: Introduction to the Waliduino board and course.
 ---
 
 

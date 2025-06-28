@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1: Turn On the Red LED</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+  <nav class="nav-rail">
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/000_Get_Started/index.html">Get Started</a></li>
+      <li><a href="/000_Good_To_Know/index.html">Good to Know</a></li>
+      <li><a href="/001_Unit1_Turn_On_Red_Led/index.html">Unit 1</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+
+
+<h1>🔴 Unit 1: Turn On the Red LED</h1>
+
+<h3><strong>🧠 What You Will Learn</strong></h3>
+
+<p>In this unit, you will learn how to <strong>turn on an LED</strong> using code. Along the way, you'll understand what an <strong>output</strong> is, and learn two important commands:</p>
+
+<ul>
+<li>pinMode() – for setting up a pin as output.</li>
+</ul>
+
+<ul>
+<li>digitalWrite() – for turning a pin on or off.</li>
+</ul>
+
+<p>  ---</p>
+
+<h3><strong>🎯 Objective</strong></h3>
+
+<p><strong>By the end of this unit, you will be able to:</strong></p>
+
+<ul>
+<li>Understand the meaning of the term output</li>
+</ul>
+
+<ul>
+<li>Use `pinMode()` to set a pin as an output</li>
+</ul>
+
+<ul>
+<li>Use `digitalWrite()` to turn an output pin on</li>
+</ul>
+
+<ul>
+<li>Recognize the purpose of curly braces { } in a sketch</li>
+</ul>
+
+<ul>
+<li>Know why we add a semicolon `;` at the end of each instruction</li>
+</ul>
+
+<p>  ---</p>
+
+<h3><strong>🧩 Used Component</strong></h3>
+
+<ul>
+<li>**Red LED** (connected to **pin D11**)</li>
+</ul>
+
+<h3><strong>🛠️ Step-by-Step Instructions</strong></h3>
+
+<h4><strong>✅ Step 1: Open the Arduino IDE</strong></h4>
+
+<p>Connect your <strong>Waliduino</strong> via USB and launch the <strong>Arduino IDE</strong>.</p>
+
+<h4><strong>✅ Step 2: Create a new sketch</strong></h4>
+
+<p>Delete any existing code and enter the following:</p>
+
+<pre><code>
+void setup() {
+    pinMode(11, OUTPUT);
+    digitalWrite(11, HIGH);  
+}
+void loop() {
+} 
+</code></pre>
+<p>---- </p>
+
+<h4><strong>✅ Step 3: Ensure your board and port are correct</strong></h4>
+
+<ul>
+<li>**Tools \> Board** → select **Arduino Nano**</li>
+</ul>
+
+<ul>
+<li>**Tools \> Port** → choose the port your board is on (e.g., COM3 or COM4)</li>
+</ul>
+
+<h4><strong>✅ Step 4: Upload the sketch</strong></h4>
+
+<p>Click the <strong>Upload</strong> button (→).  </p>
+<p> If everything is correct, the <strong>red LED turns on</strong>\! 🔴</p>
+
+<h1>💡Let’s break this sketch down step by step:</h1>
+
+<p>---</p>
+
+<h4><strong>🛠️ pinMode(11, OUTPUT);</strong></h4>
+
+<p>This line tells the Arduino that <strong>pin 11</strong> will be used as an <strong>output</strong>.  </p>
+<p> That means the pin is prepared to <strong>control something</strong>, like an LED.</p>
+
+<p>---</p>
+
+<h4><strong>⚡ digitalWrite(11, HIGH);</strong></h4>
+
+<p>This line <strong>sets pin 11 to 5 volts</strong> (HIGH).  </p>
+<p> Since the red LED is connected to that pin, the voltage makes the <strong>LED light up</strong>.</p>
+
+<p>---</p>
+
+<h4><strong>🧠 Why is the code only in setup()?</strong></h4>
+
+<p>We only want the LED to <strong>turn on once</strong>, right when the program starts.  </p>
+<p>The setup() function runs <strong>only one time</strong>, so it's perfect for actions that don’t need to be repeated.</p>
+
+<p>---</p>
+
+<h4><strong>🔁 What does loop() do here?</strong></h4>
+
+<p>Nothing — it’s <strong>empty</strong> for now.  </p>
+<p> But it must still be included, because every Arduino sketch requires both `setup()` and loop().</p>
+
+<p>---</p>
+
+<h4><strong>🔣 What are the { } braces for?</strong></h4>
+
+<p>Curly braces { } <strong>group instructions</strong> that belong together.  </p>
+<p> All the code inside setup() goes between its braces, and the same for loop().</p>
+
+<p>---</p>
+
+<h4><strong>🔚 Why do we need semicolons `;`?</strong></h4>
+
+<p>Each command in Arduino must end with a <strong>semicolon `;`</strong>.  </p>
+<p> It tells the Arduino: “This line is complete.”  </p>
+<p> ❗ Forgetting a semicolon will cause an error when you try to upload your sketch.</p>
+
+<p>---</p>
+
+<h3><strong>🔌 How the LED is wired and why we use a Resistor</strong></h3>
+
+<p>When you turn on an LED with the Arduino, you're actually creating a small <strong>electrical circuit</strong>. Here's how it's connected:</p>
+
+<p>➡️ <strong>Arduino Pin → Resistor → LED → GND (Ground)</strong></p>
+
+<p>Let’s break this down:</p>
+
+<h4><strong>🔴 1\. The Arduino Pin</strong></h4>
+
+<p>When you use `digitalWrite(11, HIGH)`, the Arduino pin sends out <strong>5 volts</strong> — like turning on a tiny switch that allows current to flow.</p>
+
+<h4><strong>🧱 2\. The Resistor</strong></h4>
+
+<p>Before the current reaches the LED, it flows through a <strong>resistor</strong> (typically 220 or 330 ohms).</p>
+
+<p> 👉 <strong>Why do we need it?</strong>  </p>
+<p> Without the resistor, <strong>too much current</strong> would flow into the LED — which can <strong>burn it out</strong> or damage the Arduino. The resistor <strong>slows down</strong> the current to a safe level.</p>
+
+<h4><strong>💡 3\. The LED</strong></h4>
+
+<p>After passing through the resistor, the current reaches the <strong>LED</strong>, making it light up.</p>
+
+<p>---</p>
+
+<h3><strong>📘 New Terms</strong></h3>
+
+<ul>
+<li>**Output**: A pin that **sends** signals or power (e.g., to turn on an LED or motor)</li>
+</ul>
+
+<ul>
+<li>`pinMode(pin, OUTPUT)`: Tells the Arduino to use a specific pin as output</li>
+</ul>
+
+<ul>
+<li>`digitalWrite(pin, HIGH)`: Sets the voltage at the pin to **HIGH** (5V) — turning the connected device **on**</li>
+</ul>
+
+<p>---</p>
+
+<h3><strong>What We Have Learned</strong></h3>
+
+<ul>
+<li>Every Arduino sketch must have two main parts: `setup()` and `loop()`</li>
+</ul>
+
+<ul>
+<li>pinMode() sets a pin as either **input** or **output**</li>
+</ul>
+
+<ul>
+<li>digitalWrite() turns a pin ON (`HIGH`) or OFF (`LOW`)</li>
+</ul>
+
+<ul>
+<li>An **output** is a pin that will be setted as HIGH or LOW</li>
+</ul>
+
+<ul>
+<li>**Curly braces `{ }`** are used to group code blocks.</li>
+</ul>
+
+<ul>
+<li>For example: everything inside `setup()` must be inside `{ }`</li>
+</ul>
+
+<ul>
+<li>**Semicolons `;`** mark the **end of each command**</li>
+</ul>
+
+<ul>
+<li>If you forget them, the code won’t compile or will cause errors</li>
+</ul>
+
+
+  </main>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

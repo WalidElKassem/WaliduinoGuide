@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good to Know</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+  <nav class="nav-rail">
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/000_Get_Started/index.html">Get Started</a></li>
+      <li><a href="/000_Good_To_Know/index.html">Good to Know</a></li>
+      <li><a href="/001_Unit1_Turn_On_Red_Led/index.html">Unit 1</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+
+
+<h3>📘 Good to know before starting</h3>
+
+<p>Before you start building exciting projects with the Waliduino, it’s helpful to understand a few basic terms. Don’t worry — they’re simple, and you’ll master them as you go!</p>
+
+<ul>
+<li>Setup and loop</li>
+</ul>
+
+<ul>
+<li>Input and output</li>
+</ul>
+
+<ul>
+<li>HIGH and LOW</li>
+</ul>
+
+<ul>
+<li>Analog and digital</li>
+</ul>
+
+
+<h3>🔁 Understanding setup() and loop()</h3>
+
+<p>Every Arduino program is called a sketch, and each sketch must have two main parts: setup() and loop().</p>
+<p>setup() runs once when your board is turned on or reset. This is where you prepare things, like setting up pin modes or starting sensors.</p>
+
+
+<p>loop() runs again and again, as long as the board is on. This is where you put the code that controls what your project does continuously—like blinking a light, checking a sensor, or turning on a motor.</p>
+
+
+<p>Think of it like this:</p>
+<p>setup() = get ready</p>
+
+
+<p>loop() = keep going</p>
+
+
+<p>Both parts are required in every Arduino sketch—even if one of them is empty. They are the backbone of how your Waliduino communicates with the world.</p>
+
+<h3>🔌 Understanding the Terms: Input and Output</h3>
+<p>In electronics, we often talk about inputs and outputs. These are the two main ways your Arduino (and your Waliduino) communicates with the world.</p>
+
+<p>🟢 What is an Output?</p>
+<p>An output is a pin that sends signals from the Arduino to something else—like an LED, a buzzer, or a motor.</p>
+<p>For example:</p>
+<p>Turning on an LED = sending power out through a pin</p>
+
+
+<p>Playing a sound = sending a signal to the speaker</p>
+
+<p>🔵 What is an Input?</p>
+<p>An input is a pin that receives signals—usually from a sensor, button, or switch.</p>
+<p>For example:</p>
+<p>Reading a pushbutton = checking if it’s pressed</p>
+
+
+<p>Reading a light sensor = checking how bright it is</p>
+
+
+<h3>⚡ HIGH and LOW — What Do They Mean?</h3>
+<p>HIGH = 5 volts</p>
+<p> → The pin is ON (sends power if it’s an output, or receives power if it’s an input)</p>
+
+
+<p>LOW = 0 volts</p>
+<p> → The pin is OFF (no power)</p>
+
+
+<p>Whether you're using a pin as input or output, Arduino uses HIGH and LOW to represent voltage levels.</p>
+<p>🧠 Tip: You can think of HIGH as "yes, active, on" and LOW as "no, inactive, off."</p>
+
+<h3>🎛️ Understanding Digital and Analog I/O</h3>
+<p>In electronics, we often talk about Digital I/O and Analog I/O — but what do these terms really mean?</p>
+<p>Digital I/O means the pin can only have two values:</p>
+<p> 0 (OFF or 0 volts) and 1 (ON or 5 volts).</p>
+<p> 👉 Example: Turning an LED ON or OFF — it's either glowing or it isn’t.</p>
+
+
+<p>Analog I/O, on the other hand, can work with a range of values between 0 and 5 volts.</p>
+<p> 👉 Example: Reading a temperature sensor that changes smoothly — like 22.3°C, 24.8°C, etc.</p>
+
+
+<p>You can think of it like a light switch vs. a dimmer:</p>
+<p>Digital = just ON or OFF</p>
+
+
+<p>Analog = smoothly adjusting the level, like brightness or volume</p>
+
+
+<p>The Waliduino lets you use both types — so you can build smart systems that react to buttons and measure real-world values like light or heat!</p>
+
+
+
+
+
+  </main>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -47,6 +47,11 @@ a:hover {
   border: none;
   cursor: pointer;
 }
+.nav-toggle:focus {
+  outline: 2px solid #0069d9;
+  outline-offset: 2px;
+}
+
 .nav-menu {
   list-style: none;
   margin: 0;

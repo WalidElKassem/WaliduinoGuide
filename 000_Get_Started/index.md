@@ -164,14 +164,14 @@ Then go to **Tools \> Port** and choose the port where your Waliduino is connect
 
 👉 [Good to know](../000_Good_To_Know/index.md)
 
-[ArduinoDownload]:<assets/ArduinoDownload.png>
-[ArduinoAllowDownload]:<assets/ArduinoAllowDownload.png>
-[ArduinoNewsLetter]:<assets/ArduinoNewsLetter.png>
-[StartTheInstaller]:<assets/StartTheInstaller.png>
-[LicenseAgreement]:<assets/LicenseAgreement.png>
-[ArduinoBoardManager]:<assets/ArduinoBoardManager.png>
-[ArduinoSetup]:<assets/ArduinoSetup.png>
-[SelectBoardAndPort]:<assets/SelectBoardAndPort.png>
-[SelectBoardAndPortDialog]:<assets/SelectBoardAndPortDialog.png>
-[CompleteSetup]:<assets/CompleteSetup.png>
+[ArduinoDownload]:<../assets/img/ArduinoDownload.png>
+[ArduinoAllowDownload]:<../assets/img/ArduinoAllowDownload.png>
+[ArduinoNewsLetter]:<../assets/img/ArduinoNewsLetter.png>
+[StartTheInstaller]:<../assets/img/StartTheInstaller.png>
+[LicenseAgreement]:<../assets/img/LicenseAgreement.png>
+[ArduinoBoardManager]:<../assets/img/ArduinoBoardManager.png>
+[ArduinoSetup]:<../assets/img/ArduinoSetup.png>
+[SelectBoardAndPort]:<../assets/img/SelectBoardAndPort.png>
+[SelectBoardAndPortDialog]:<../assets/img/SelectBoardAndPortDialog.png>
+[CompleteSetup]:<../assets/img/CompleteSetup.png>
 

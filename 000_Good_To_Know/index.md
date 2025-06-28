@@ -1,3 +1,8 @@
+---
+---
+
+[Home](../index.md) | [Get Started](../000_Get_Started/index.md) | [Good to Know](./index.md) | [Unit 1](../001_Unit1_Turn_On_Red_Led/index.md)
+
 ### 📘 Good to know before starting
 
 Before you start building exciting projects with the Waliduino, it’s helpful to understand a few basic terms. Don’t worry — they’re simple, and you’ll master them as you go!

@@ -4,7 +4,8 @@ layout: default
 description: Introduction to the Waliduino board and course.
 ---
 
-{% include hero-banner.html image="/assets/img/ArduinoDownload.png" alt="Downloading Arduino" headline="Welcome to Waliduino!" %}
+
+# Welcome to Waliduino!
 
 The **Waliduino** is a fun and easy-to-use electronic board made for learning. It’s based on the popular **Arduino**, but specially designed for beginners who want to explore the world of **electronics** and **programming**.
 

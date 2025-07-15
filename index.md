@@ -13,7 +13,7 @@ With Waliduino, you don’t need to worry about buying extra parts or connecting
 
 The Waliduino includes many useful parts like **LEDs**, **sensors**, and **buttons**, so you can build exciting projects and learn by doing. No matter your age — whether you're a curious kid or an adult beginner — this board makes your first steps into electronics and programming exciting, simple, and fun\!
 
-**The Creator of Waliduino**
+# The Creator of Waliduino
 
 **Walid El Kassem** is an electrical engineer with over 15 years of experience in designing and programming electronic devices and embedded systems in Germany. He is well known for his deep passion for **Arduino** and for making technology easy to learn.
 

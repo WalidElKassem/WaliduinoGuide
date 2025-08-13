@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #0069d9;
+  color: #7f8183;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ a:hover {
 
 /* Navigation */
 .site-nav {
-  background: #fff;
+  background: #333;
   margin-bottom: 1rem;
 }
 .nav-toggle {

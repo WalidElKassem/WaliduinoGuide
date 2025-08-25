@@ -17,6 +17,9 @@ The Waliduino includes many useful parts like **LEDs**, **sensors**, and **butto
 
 **Walid El Kassem** is an electrical engineer with over 15 years of experience in designing and programming electronic devices and embedded systems in Germany. He is well known for his deep passion for **Arduino** and for making technology easy to learn.
 
+<img src="../assets/img/WalidElKassem.png" alt="Walid El Kassem" width="400" height="400" />
+
+
 Through his YouTube channel **@electronicsandcoding**, Walid has helped **over 100,000 students** take their first steps into the world of Arduino. His **Arabic-language Arduino course** has reached **more than one million views**, making it one of the most popular resources for Arabic-speaking learners.
 
 Walid uses his knowledge and hands-on experience to create tools that make learning easier and more fun. He designed the **Waliduino board** to help others start programming and exploring electronics with confidence.
@@ -43,3 +46,4 @@ Each of these learners can use this guide to get started right away. And by visi
 
 
 
+[WalidElKassem]:<../assets/img/WalidElKassem.png>

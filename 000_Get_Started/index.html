@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>🚀 How to Get Started</title>
+<link rel='stylesheet' href='../assets/css/style.css'>
+<script defer src='../assets/js/nav.js'></script>
+</head>
+<body>
+<nav class='site-nav'>
+  <button id='nav-toggle' class='nav-toggle' aria-expanded='false'>☰</button>
+  <ul id='nav-menu' class='nav-menu'>
+<li><a href='../index.html'>Home</a></li>
+<li><a href='../000_Good_To_Know/index.html'>Good To Know</a></li>
+<li><a href='../000_Board_Structure/index.html'>Board Structure</a></li>
+<li><a href='index.html'>Get Started</a></li>
+<li><a href='../001_Unit1_Turn_On_Red_Led/index.html'>Unit1: Turn On the Red LED</a></li>
+  </ul>
+</nav>
+<div class='container'>
+<h1>🚀 How to Get Started</h1>
+<p>To start using the <strong>Waliduino</strong>, you only need <strong>three things</strong>:</p>
+<p>1. The <strong>Waliduino board</strong></p>
+<p>2. The <strong>USB cable</strong> (included in the box)</p>
+<p>3. The <strong>Arduino IDE</strong> (a free program you install on your computer to write and upload code)</p>
+<p>Once you have these, you’re ready to connect the board and begin your first project. Don’t worry—we’ll walk you through everything\!</p>
+<p>---</p>
+<h1>💻 Installing the Arduino IDE (Windows)</h1>
+<p>To program your Waliduino board, you need to install the <strong>Arduino IDE</strong>—a software that lets you write code and send it to the board.</p>
+<p>Here is a simple step-by-step guide:</p>
+<p>---</p>
+<h4><strong>✅ Step 1: Go to the official website</strong></h4>
+<p>Open your browser and go to:</p>
+<p>👉 <a href='https://www.arduino.cc/en/software'>https://www.arduino.cc/en/software</a></p>
+<p>---</p>
+<h4><strong>✅ Step 2: Download for Windows</strong></h4>
+<p>Choose your suitable package for your operating system. Below is an example for Windows 64bits</p>
+<p>You will see a button like this:</p>
+<p>📥 <strong>“Windows Win 10 and newer, 64bits”</strong></p>
+<p><img src="../assets/img/ArduinoDownload.png" alt="Arduino Download"/></p>
+<p>---</p>
+<h4><strong>✅ Step 3: Allow the download</strong></h4>
+<p>When your browser asks if you want to keep the file, click <strong>“Yes”</strong> or <strong>“Keep”</strong>.</p>
+<p>👉 You can either:</p>
+<ul>
+<li>Choose an amount and <strong>donate</strong>, or</li>
+</ul>
+<ul>
+<li>Click <strong>“Just Download”</strong> to get it for free</li>
+</ul>
+<p>Both options will start the download of the installer.</p>
+<p><img src="../assets/img/ArduinoAllowDownload.png" alt="Allow Download" width="600" height="600"/></p>
+<p>After you click <strong>“Just Download”</strong>, you may see a pop-up asking if you want to <strong>join the Arduino newsletter</strong> by entering your email.</p>
+<p>👉 You can either:</p>
+<ul>
+<li>Enter your email to <strong>subscribe</strong>, or</li>
+</ul>
+<ul>
+<li>Simply click <strong>“Download”</strong> again to continue without subscribing</li>
+</ul>
+<p>Your download will then begin automatically. If your browser asks for permission, click <strong>“Keep”</strong> or <strong>“Yes”</strong> to allow the download.</p>
+<p><img src="../assets/img/ArduinoNewsLetter.png" alt="Arduino Newsletter" width="600" height="600"/></p>
+<p>---</p>
+<h4><strong>✅ Step 4: Start the installer</strong></h4>
+<p>Double-click the downloaded file (something like `arduino-1.x.x-windows.exe`) to begin installation.</p>
+<p><img src="../assets/img/StartTheInstaller.png" alt="Start the Installer"/></p>
+<p>---</p>
+<h4><strong>✅ Step 5: Agree and Install</strong></h4>
+<p>1. Click <strong>“I Agree”</strong> to accept the license.</p>
+<p><img src="../assets/img/LicenseAgreement.png" alt="License Agreement" /></p>
+<p>2. Keep all default options selected.</p>
+<p>3. Click <strong>“Next”</strong>, then <strong>“Install”</strong>.</p>
+<p><img src="../assets/img/ArduinoSetup.png" alt="Arduino Setup"/></p>
+<p>---</p>
+<h4><strong>✅ Step 6: Wait for the installation</strong></h4>
+<p>The installer will copy all needed files and drivers. This may take 1–2 minutes.</p>
+<p>---</p>
+<h4><strong>✅ Step 7: Finish the Installation</strong></h4>
+<p>After the setup is complete, you’ll see the <strong>“Completing Arduino IDE Setup”</strong> screen.</p>
+<ul>
+<li>If the box <strong>“Run Arduino IDE”</strong> is checked (✅), clicking <strong>Finish</strong> will automatically <strong>open the Arduino IDE</strong>.</li>
+</ul>
+<p><img src="../assets/img/CompleteSetup.png" alt="Complete Setup" /></p>
+<ul>
+<li>If you want to open it later, just look for the <strong>Arduino icon</strong> on your <strong>Desktop</strong> or in the <strong>Start menu</strong>.</li>
+</ul>
+<p>🎉 You’re now ready to start your first project with <strong>Waliduino</strong>\!</p>
+<h1>🖊️ Exploring the Arduino IDE Editor</h1>
+<p>This is what the <strong>Arduino IDE</strong> looks like when you open it. The editor is where you write the <strong>code (called sketches)</strong> that tells your Waliduino what to do.</p>
+<p><img src="../assets/img/ArduinoIdeStart.png" /></p>
+<p>Let’s look at the most important parts:</p>
+<p>---</p>
+<h4><strong>📝 The Code Area</strong></h4>
+<p>In the middle, you see two basic functions:</p>
+<ul>
+<li><strong>`setup()`</strong> runs once when the board is powered on or reset.</li>
+</ul>
+<p>```cpp</p>
+<p>void setup() {</p>
+<p>// put your setup code here, to run once:</p>
+<p>}</p>
+<p>```</p>
+<ul>
+<li><strong>`loop()`</strong> runs again and again—this is where your main program goes.</li>
+</ul>
+<p>```cpp</p>
+<p>void loop() {</p>
+<p>// put your setup code here, to run once:</p>
+<p>}</p>
+<p>```</p>
+<p><br></p>
+<p>This is the place where you’ll write your own code for sensors, LEDs, motors, and more\!</p>
+<p>---</p>
+<h4><strong>🧩 Board Manager (Left Sidebar)</strong></h4>
+<p>On the left side, there is a section called <strong>Boards Manager</strong>. This is where you install the right <strong>board package</strong> so the Arduino IDE knows how to talk to your Waliduino.</p>
+<p><img src="../assets/img/ArduinoBoardManager.png" alt="Arduino Board Manager"/></p>
+<p>👉 <strong>Important:</strong> Before you upload code, make sure you install the <strong>Arduino AVR Boards</strong> package. This supports the <strong>Arduino Nano</strong>, which is the brain of the Waliduino.</p>
+<p>To install:</p>
+<p>1. Search for <strong>"Arduino AVR Boards"</strong></p>
+<p>2. Click <strong>Install</strong> (you’ll see “Installed” once it’s done)</p>
+<h3><strong>Select Board and Port</strong></h3>
+<p>Make sure to select the “Arduino nano” as Board and to select the correct COM Port where the Arduino nano board is attached via USB to your PC.</p>
+<p><img src="../assets/img/SelectBoardAndPort.png" alt="Select Board and Port"/></p>
+<p><img src="../assets/img/SelectBoardAndPortDialog.png" alt="Select Board and Port Dialog"  /></p>
+<p>Once this is set up, you’re ready to choose the board and port, write your first sketch, and upload it to the Waliduino\!</p>
+<h1>🔌 Installing the USB Driver for Waliduino</h1>
+<p>To connect your <strong>Waliduino board</strong> to your computer and upload code, you may need to install a <strong>USB driver</strong>. This driver helps your PC recognize the board through the USB cable.</p>
+<p>👉 After downloading, follow the installer instructions and restart your computer if needed.</p>
+<p>Once installed, your computer will recognize the Waliduino board when connected, and the <strong>COM port</strong> will appear in the Arduino IDE.</p>
+<p>Go to <strong>Tools \> Board</strong> and select <strong>Arduino Nano</strong>.</p>
+<p>Then go to <strong>Tools \> Port</strong> and choose the port where your Waliduino is connected (usually something like <strong>COM3</strong>, <strong>COM4</strong>, etc.).</p>
+<p>👉 <a href='../000_Good_To_Know/index.html'>Good to know</a></p>
+</div>
+</body>
+</html>

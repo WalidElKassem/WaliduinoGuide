@@ -38,7 +38,7 @@ Choose your suitable package for your operating system. Below is an example for 
  You will see a button like this:  
  📥 **“Windows Win 10 and newer, 64bits”**
 
-**![][ArduinoDownload]**
+<img src="../assets/img/ArduinoDownload.png" alt="Arduino Download"/>
 
 ---
 
@@ -54,7 +54,7 @@ When your browser asks if you want to keep the file, click **“Yes”** or **�
 
 Both options will start the download of the installer.
 
-![][ArduinoAllowDownload]
+<img src="../assets/img/ArduinoAllowDownload.png" alt="Allow Download" width="600" height="600"/>
 
 After you click **“Just Download”**, you may see a pop-up asking if you want to **join the Arduino newsletter** by entering your email.
 
@@ -65,27 +65,25 @@ After you click **“Just Download”**, you may see a pop-up asking if you want
 * Simply click **“Download”** again to continue without subscribing
 
 Your download will then begin automatically. If your browser asks for permission, click **“Keep”** or **“Yes”** to allow the download.
-
-![][ArduinoNewsLetter]
+<img src="../assets/img/ArduinoNewsLetter.png" alt="Arduino Newsletter" width="600" height="600"/>
 
 ---
 
 #### **✅ Step 4: Start the installer**
 
 Double-click the downloaded file (something like `arduino-1.x.x-windows.exe`) to begin installation.
-
-![][StartTheInstaller]
+<img src="../assets/img/StartTheInstaller.png" alt="Start the Installer"/>
 
 ---
 
 #### **✅ Step 5: Agree and Install**
 
 1. Click **“I Agree”** to accept the license.  
-   ![][LicenseAgreement]  
+<img src="../assets/img/LicenseAgreement.png" alt="License Agreement" />
 2. Keep all default options selected.
 
 3. Click **“Next”**, then **“Install”**.  
-   ![][ArduinoSetup]
+<img src="../assets/img/ArduinoSetup.png" alt="Arduino Setup"/>
 
 ---
 
@@ -101,6 +99,8 @@ After the setup is complete, you’ll see the **“Completing Arduino IDE Setup�
 
 * If the box **“Run Arduino IDE”** is checked (✅), clicking **Finish** will automatically **open the Arduino IDE**.
 
+<img src="../assets/img/CompleteSetup.png" alt="Complete Setup" />
+
 * If you want to open it later, just look for the **Arduino icon** on your **Desktop** or in the **Start menu**.
 
 🎉 You’re now ready to start your first project with **Waliduino**\!
@@ -110,6 +110,8 @@ After the setup is complete, you’ll see the **“Completing Arduino IDE Setup�
 
 This is what the **Arduino IDE** looks like when you open it. The editor is where you write the **code (called sketches)** that tells your Waliduino what to do.
 
+<img src="../assets/img/ArduinoIdeStart.png" />
+
 Let’s look at the most important parts:
 
 ---
@@ -118,12 +120,20 @@ Let’s look at the most important parts:
 
 In the middle, you see two basic functions:
 
-![][CompleteSetup]
-
 * **`setup()`** runs once when the board is powered on or reset.
+```cpp
+void setup() {
+   // put your setup code here, to run once:
+}
+```
 
 * **`loop()`** runs again and again—this is where your main program goes.
-
+```cpp
+void loop() {
+   // put your setup code here, to run once:
+}
+```
+<br>
 This is the place where you’ll write your own code for sensors, LEDs, motors, and more\!
 
 ---
@@ -131,8 +141,7 @@ This is the place where you’ll write your own code for sensors, LEDs, motors, 
 #### **🧩 Board Manager (Left Sidebar)**
 
 On the left side, there is a section called **Boards Manager**. This is where you install the right **board package** so the Arduino IDE knows how to talk to your Waliduino.
-
-![][ArduinoBoardManager]
+<img src="../assets/img/ArduinoBoardManager.png" alt="Arduino Board Manager"/>
 
 👉 **Important:** Before you upload code, make sure you install the **Arduino AVR Boards** package. This supports the **Arduino Nano**, which is the brain of the Waliduino.
 
@@ -144,9 +153,8 @@ To install:
 
 ### **Select Board and Port**
 Make sure to select the “Arduino nano” as Board and to select the correct COM Port where the Arduino nano board is attached via USB to your PC.
-
-![][SelectBoardAndPort]
-![][SelectBoardAndPortDialog]
+<img src="../assets/img/SelectBoardAndPort.png" alt="Select Board and Port"/>
+<img src="../assets/img/SelectBoardAndPortDialog.png" alt="Select Board and Port Dialog"  />
 
 
 Once this is set up, you’re ready to choose the board and port, write your first sketch, and upload it to the Waliduino\!
@@ -163,15 +171,4 @@ Go to **Tools \> Board** and select **Arduino Nano**.
 Then go to **Tools \> Port** and choose the port where your Waliduino is connected (usually something like **COM3**, **COM4**, etc.).
 
 👉 [Good to know](../000_Good_To_Know/index.md)
-
-[ArduinoDownload]:<../assets/img/ArduinoDownload.png>
-[ArduinoAllowDownload]:<../assets/img/ArduinoAllowDownload.png>
-[ArduinoNewsLetter]:<../assets/img/ArduinoNewsLetter.png>
-[StartTheInstaller]:<../assets/img/StartTheInstaller.png>
-[LicenseAgreement]:<../assets/img/LicenseAgreement.png>
-[ArduinoBoardManager]:<../assets/img/ArduinoBoardManager.png>
-[ArduinoSetup]:<../assets/img/ArduinoSetup.png>
-[SelectBoardAndPort]:<../assets/img/SelectBoardAndPort.png>
-[SelectBoardAndPortDialog]:<../assets/img/SelectBoardAndPortDialog.png>
-[CompleteSetup]:<../assets/img/CompleteSetup.png>
 

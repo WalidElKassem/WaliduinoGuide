@@ -1,9 +1,27 @@
----
-layout: default
-title: "Page Not Found"
-permalink: /404.html
----
-
-<h1>404 - Page Not Found</h1>
-<p>Sorry, the page you were looking for doesn't exist.</p>
-<p><a href="{{ '/' | relative_url }}">Return to the homepage</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/nav.js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <button id="nav-toggle" class="nav-toggle" aria-expanded="false">☰</button>
+  <ul id="nav-menu" class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="000_Good_To_Know/index.html">Good To Know</a></li>
+    <li><a href="000_Board_Structure/index.html">Board Structure</a></li>
+    <li><a href="000_Get_Started/index.html">Get Started</a></li>
+    <li><a href="001_Unit1_Turn_On_Red_Led/index.html">Unit1: Turn On the Red LED</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <h1>404 - Page Not Found</h1>
+  <p>Sorry, the page you were looking for doesn't exist.</p>
+  <p><a href="index.html">Return to the homepage</a></p>
+</div>
+</body>
+</html>

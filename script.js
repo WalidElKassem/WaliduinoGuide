@@ -60,6 +60,63 @@ if (heroImage && heroFallback) {
   }
 }
 
+const managedImages = Array.from(document.querySelectorAll("img[src]"));
+
+if (managedImages.length > 0) {
+  const baseSrcMap = new WeakMap();
+  const retriesMap = new WeakMap();
+  const maxRetries = 1;
+
+  const getBaseSrc = (image) => {
+    if (!baseSrcMap.has(image)) {
+      const current = image.currentSrc || image.getAttribute("src") || "";
+      const [base] = current.split("?");
+      baseSrcMap.set(image, base);
+    }
+    return baseSrcMap.get(image) || "";
+  };
+
+  const reloadImage = (image) => {
+    const retries = retriesMap.get(image) || 0;
+    if (retries >= maxRetries) {
+      return;
+    }
+
+    const baseSrc = getBaseSrc(image);
+    if (!baseSrc) {
+      return;
+    }
+
+    retriesMap.set(image, retries + 1);
+    image.src = `${baseSrc}?refresh=${Date.now()}`;
+  };
+
+  const validateImage = (image) => {
+    if (image.complete && image.naturalWidth === 0) {
+      reloadImage(image);
+      return;
+    }
+
+    if (!image.complete) {
+      image.decode().catch(() => reloadImage(image));
+    }
+  };
+
+  managedImages.forEach((image) => {
+    image.addEventListener("error", () => reloadImage(image));
+  });
+
+  window.addEventListener("pageshow", () => {
+    managedImages.forEach(validateImage);
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") {
+      managedImages.forEach(validateImage);
+    }
+  });
+}
+
 const yearTarget = document.getElementById("current-year");
 
 if (yearTarget) {

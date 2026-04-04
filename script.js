@@ -269,18 +269,8 @@ if (heroImage && heroFallback) {
 const managedImages = Array.from(document.querySelectorAll("img[src]"));
 
 if (managedImages.length > 0) {
-  const baseSrcMap = new WeakMap();
   const retriesMap = new WeakMap();
   const maxRetries = 1;
-
-  const getBaseSrc = (image) => {
-    if (!baseSrcMap.has(image)) {
-      const current = image.currentSrc || image.getAttribute("src") || "";
-      const [base] = current.split("?");
-      baseSrcMap.set(image, base);
-    }
-    return baseSrcMap.get(image) || "";
-  };
 
   const reloadImage = (image) => {
     const retries = retriesMap.get(image) || 0;
@@ -288,13 +278,16 @@ if (managedImages.length > 0) {
       return;
     }
 
-    const baseSrc = getBaseSrc(image);
+    const baseSrc = image.getAttribute("src");
     if (!baseSrc) {
       return;
     }
 
     retriesMap.set(image, retries + 1);
-    image.src = `${baseSrc}?refresh=${Date.now()}`;
+    image.removeAttribute("src");
+    requestAnimationFrame(() => {
+      image.src = baseSrc;
+    });
   };
 
   const validateImage = (image) => {
@@ -312,7 +305,7 @@ if (managedImages.length > 0) {
     image.addEventListener("error", () => reloadImage(image));
   });
 
-  window.addEventListener("pageshow", () => {
+  window.addEventListener("load", () => {
     managedImages.forEach(validateImage);
   });
 

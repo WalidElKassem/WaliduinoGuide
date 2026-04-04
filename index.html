@@ -22,6 +22,7 @@
   <meta property="og:image" content="assets/Walid_with_waliduino.png">
   <meta property="og:url" content="https://www.waliduino.com/">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="image" href="assets/Walid_with_waliduino.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -119,6 +120,9 @@
                 alt="Waliduino electronics learning board with integrated modules and clean product presentation"
                 width="960"
                 height="960"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
               >
               <div class="hero-fallback" aria-hidden="true">
                 <div class="hero-fallback__grid"></div>
@@ -155,6 +159,9 @@
               alt="Detailed overview of the Waliduino board and its integrated modules"
               width="1600"
               height="1200"
+              loading="lazy"
+              fetchpriority="low"
+              decoding="async"
             >
           </div>
           <div class="explore-showcase__copy">
@@ -369,6 +376,9 @@
               alt="Portrait of Walid El Kassem, creator of Waliduino"
               width="960"
               height="960"
+              loading="lazy"
+              fetchpriority="low"
+              decoding="async"
             >
           </figure>
           <p>

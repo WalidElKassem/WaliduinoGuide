@@ -963,3 +963,43 @@ select {
     transform: none;
   }
 }
+
+.lang-toggle {
+  border: 1px solid rgba(16, 32, 61, 0.16);
+  background: linear-gradient(135deg, #ffffff, #e9f7ff);
+  color: #163055;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(14, 155, 136, 0.5);
+  box-shadow: 0 10px 24px rgba(12, 174, 151, 0.18);
+}
+
+html[dir="rtl"] .site-nav {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .brand-mark {
+  text-align: right;
+}
+
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .hero-copy,
+html[dir="rtl"] .creator-copy,
+html[dir="rtl"] .footer-grid {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .lang-toggle {
+    font-size: 0.82rem;
+    padding: 0.45rem 0.85rem;
+  }
+}

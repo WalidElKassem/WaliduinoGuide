@@ -1022,7 +1022,7 @@ html[dir="rtl"] .cta-shell h2 {
   html[dir="rtl"] .brand-mark {
     min-width: 0;
     gap: 0.55rem;
-    overflow: hidden;
+    overflow: visible;
   }
 
   html[dir="rtl"] .brand-mark__icon {
@@ -1042,6 +1042,7 @@ html[dir="rtl"] .cta-shell h2 {
 
   html[dir="rtl"] .brand-mark__text {
     min-width: 0;
+    overflow: hidden;
   }
 
   html[dir="rtl"] .brand-mark__text strong {

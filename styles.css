@@ -997,9 +997,33 @@ html[dir="rtl"] .footer-grid {
   text-align: right;
 }
 
+html[dir="rtl"] .section-heading h2,
+html[dir="rtl"] .hero h1,
+html[dir="rtl"] .cta-shell h2 {
+  letter-spacing: 0;
+}
+
 @media (max-width: 900px) {
   .lang-toggle {
     font-size: 0.82rem;
     padding: 0.45rem 0.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  html[dir="rtl"] .hero-copy h1 {
+    max-width: 100%;
+  }
+
+  html[dir="rtl"] .nav-shell {
+    gap: 0.55rem;
+  }
+
+  html[dir="rtl"] .brand-mark__text span:last-child {
+    display: none;
+  }
+
+  html[dir="rtl"] .lang-toggle {
+    padding-inline: 0.75rem;
   }
 }

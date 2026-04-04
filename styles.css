@@ -1019,6 +1019,35 @@ html[dir="rtl"] .cta-shell h2 {
     gap: 0.55rem;
   }
 
+  html[dir="rtl"] .brand-mark {
+    min-width: 0;
+    gap: 0.55rem;
+  }
+
+  html[dir="rtl"] .brand-mark__icon {
+    width: 2.45rem;
+    border-radius: 14px;
+    flex-shrink: 0;
+  }
+
+  html[dir="rtl"] .brand-mark__icon::before {
+    inset: 0.62rem;
+    border-radius: 8px;
+  }
+
+  html[dir="rtl"] .brand-mark__icon::after {
+    inset: 0.98rem;
+  }
+
+  html[dir="rtl"] .brand-mark__text {
+    min-width: 0;
+  }
+
+  html[dir="rtl"] .brand-mark__text strong {
+    font-size: 0.92rem;
+    white-space: nowrap;
+  }
+
   html[dir="rtl"] .brand-mark__text span:last-child {
     display: none;
   }

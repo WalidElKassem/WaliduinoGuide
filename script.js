@@ -99,6 +99,7 @@ const i18nMap = {
   "Through his YouTube channel": "من خلال قناته على يوتيوب",
   "@electronicsandcoding": "@electronicsandcoding",
   "he has helped a large community of Arabic-speaking learners take their first steps in Arduino, electronics, and programming. Waliduino reflects that teaching experience in a board designed to simplify the first learning journey without oversimplifying the concepts.": "ساعد مجتمعًا كبيرًا من المتعلمين الناطقين بالعربية على بدء رحلتهم في أردوينو والإلكترونيات والبرمجة. ويعكس Waliduino هذه الخبرة التعليمية في لوحة صُممت لتبسيط رحلة التعلم الأولى دون الإخلال بعمق المفاهيم.",
+  ", he has helped a large community of Arabic-speaking learners take their first steps in Arduino, electronics, and programming. Waliduino reflects that teaching experience in a board designed to simplify the first learning journey without oversimplifying the concepts.": "، وساعد مجتمعًا كبيرًا من المتعلمين الناطقين بالعربية على بدء رحلتهم في أردوينو والإلكترونيات والبرمجة. ويعكس Waliduino هذه الخبرة التعليمية في لوحة صُممت لتبسيط رحلة التعلّم الأولى دون الإخلال بعمق المفاهيم.",
   "15+ years": "+15 سنة",
   "Industry experience in electronics and embedded systems": "خبرة صناعية في الإلكترونيات والأنظمة المدمجة",
   "100,000+": "+100,000",

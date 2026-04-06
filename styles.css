@@ -1016,13 +1016,24 @@ html[dir="rtl"] .cta-shell h2 {
   }
 
   html[dir="rtl"] .nav-shell {
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    align-items: center;
     gap: 0.55rem;
+    padding-inline-end: max(0.45rem, env(safe-area-inset-right));
   }
 
   html[dir="rtl"] .brand-mark {
+    justify-self: end;
+    justify-content: flex-end;
     min-width: 0;
     gap: 0.55rem;
-    overflow: visible;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  html[dir="rtl"] .nav-toggle {
+    justify-self: center;
   }
 
   html[dir="rtl"] .brand-mark__icon {
@@ -1057,6 +1068,8 @@ html[dir="rtl"] .cta-shell h2 {
   }
 
   html[dir="rtl"] .lang-toggle {
+    justify-self: start;
     padding-inline: 0.75rem;
+    white-space: nowrap;
   }
 }
